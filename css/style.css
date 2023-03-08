@@ -103,10 +103,10 @@ nav{
       }
     nav ul{
       position: absolute;
-      top: 80px;
+      top: 50px;
       left: -100%;
       background: #111;
-      height: 100vh;
+      height: 470px;
       width: 100%;
       text-align: center;
       display: block;
@@ -115,7 +115,7 @@ nav{
     }
 
     nav ul p{
-        margin-top: 380px;
+        margin-top:0px;
         letter-spacing: 2px;
         color: white;
         display:block;
@@ -157,6 +157,18 @@ nav{
   .content div{
     font-size: 40px;
     font-weight: 700;
+  }
+
+  @media  screen and (max-width:290px) {
+    nav .logo{
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+      }
+
+      nav .menu-btn i {
+        font-size: 13px;
+      }
   }
 /* nav end here */
 
