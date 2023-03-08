@@ -76,6 +76,19 @@ nav{
     }
   }
   @media (max-width: 920px) {
+
+    nav{
+        position:fixed;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        background: #1b1b1b;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px 0 100px;
+        flex-wrap: wrap;
+        z-index: 1;
+    }
     nav .menu-btn i{
       display: block;
     }
