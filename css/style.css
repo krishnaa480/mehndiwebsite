@@ -11,6 +11,7 @@ body{
 }
 
 html{
+    scroll-behavior: smooth;
     font-size: 15px;
 }
 
@@ -298,10 +299,8 @@ nav{
     align-content: center;
     align-items: center;
     padding: 40px;
-    
 
 }
-
 
 .center01{
     text-align: center;
