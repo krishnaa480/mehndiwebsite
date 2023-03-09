@@ -4,221 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <style>
-        body{
-            background-color: rgb(43, 0, 0);
-            height: 90vh;
+        body {
+            background: #00091B;
+            color: #fff;
+          }
+          
+         .wrapper{
             display: flex;
             justify-content: center;
-            align-items: center;
-            animation: color 15s linear infinite;
-        }
-
-        @keyframes color {
-            10%{
-                background-color: rgb(17, 235, 224);
-            }
-            20%{
-                background-color: rgb(92, 1, 1);
-            }
-
-            30%{
-                background-color: rgb(170, 130, 130);
-            }
-            40%{
-                background-color: rgb(226, 255, 38);
-            }
-            50%{
-                background-color: blueviolet;
-            }
-            70%{
-                background-color: deeppink;
-            }
-
-            80%{
-                background-color: rgba(255, 0, 0, 0.323);
-            }
-            90%{
-                background-color:black;
-            }
-            100%{
-                background-color: rgb(102, 113, 233);
-            }
-            
-        }
-
-        
-        .card{
-            width: 300px;
-            height:auto;
-            background: rgb(17, 0, 15);
-            border-radius: 10px;
-            box-shadow: 1px 3px 15px black;
-            transition-property: all;
-            transition-duration: .5s;
-            /* margin-left: 30px; */
-            
-            
-        }
-        .card:hover{
-            transition-duration: .5s;
-            background: rgb(53, 0, 28);
-        }
-        .img-box {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        
-        .img-box img{
-            border: 5px solid rgb(1, 0, 0);
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            box-shadow: 0px 1px 10px black;
-            transition-duration: .4s;
-        }
-        
-        
-        .infor{
-            display:flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            height: 90vh;
+         }
+          
+          h1 {
             text-align: center;
-        }
-        .infor h2{
-            text-shadow: 1px 2px 3px black;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 30px;
-            color: white;
-        }
-        .infor .small{
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 15px;
-            color:white;
-            font-weight: lighter;
-            letter-spacing: 1.5px;
-        
-        }
-        
-        .font-awesomes{
-            color: white;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-        }
-        .fontt{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .font-awesomes a{
-            border-radius:100%;
-            padding: 10px;
-            background-color: rgba(131, 23, 255, 0.696);
-            font-size: 20px;
-            color: white;
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 0;
+            line-height: 1;
+            font-weight: 700;
+          }
+          
+          .dot {
+            color: #4FEBFE;
+          }
+          
+          p {
+            text-align: center;
+            margin: 18px;
+            font-family: 'Muli', sans-serif;
+            font-weight: normal;
+            
+          }
+          
+          .icons {
+            text-align: center;
+            
+          }
+          
+          .icons i {
+            color: #00091B;
+            background: #fff;
+            height: 15px;
+            width: 15px;
+            padding: 13px;
+            margin: 0 10px;
+            border-radius: 50px;
+            border: 2px solid #fff;
+            transition: all 200ms ease;
             text-decoration: none;
-            margin: 15px;
-            box-shadow: 0px 1.1px 12px black;
+            position: relative;
+          }
+          
+          .icons i:hover, .icons i:active {
+            color: #fff;
+            background: none;
+            cursor: pointer !important;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            text-decoration: none;
             
-        }
-        .font-awesomes a:nth-child(1){
-            
-            box-shadow: 0px 1.1px 12px black;
-            background:linear-gradient(120deg, rgba(255, 0, 0, 0.342) 0% , rgba(134, 4, 255, 0.399));
-        }
-        .font-awesomes a:hover:nth-child(1){
-            transform:scale(1.1);
-            transition-duration: .4s;
-            background:linear-gradient(120deg, rgb(255, 0, 0) 0% , rgba(134, 4, 255, 0.988));
-        }
-        .font-awesomes a:nth-child(2){
-            box-shadow: 0px 1.1px 12px black;
-            background-color: rgba(26, 255, 0, 0.611);
-            transition-duration: .4s;
-        }
-        .font-awesomes a:hover:nth-child(2){
-            transform:scale(1.1);
-            color: black;
-            box-shadow: 0px 1.1px 12px black;
-            background-color: rgba(26, 255, 0, 0.992);
-        }
-        
-        .font-awesomes a:nth-child(3){
-            color: white;
-            background-color: rgba(255, 0, 0, 0.372);
-            transition-duration:.4s ;
-        }
-        .font-awesomes a:hover:nth-child(3){
-            transform: scale(1.1);
-            color: white;
-            background-color: rgb(255, 0, 0);
-        }
-        
-        .font-awesomes a:nth-child(4){
-            transition-duration:.4s ;
-            background-color: rgba(62, 62, 249, 0.639);
-        }
-
-        @media screen and (max-width:768px){
-            .card{
-                width: 260px;
-                height:auto;
-                background: rgb(17, 0, 15);
-                border-radius: 10px;
-                box-shadow: 1px 3px 15px black;
-                transition-property: all;
-                transition-duration: .5s;
-                margin-left: 0px;
-                margin: 10px;
-                
-                
-            }
-        
-            .infor h2{
-                text-shadow: 1px 2px 3px black;
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                font-size: 20px;
-                color: white;
-            }
-            .infor .small{
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                font-size: 10px;
-                color:white;
-                font-weight: lighter;
-                letter-spacing: 1.5px;
-            
-            }
-        
-        }
+          }
     </style>
 </head>
 <body>
-    <div class="card" id="contact">
-        <div class="img-box">
-         <img src="./img/dp.png" alt="">
+    <div class="wrapper">
+        <h1>Coming Soon<span class="dot">.</span></h1>
+        <p> &copy; &nbsp;Copyright developed by Krishna Agrawal</p>
+        <div class="icons">
+          <a href="https://chat.whatsapp.com/Blx2V6BxM4U6aHdo0CCjfJ"><i class="fa fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com/@panna_mehndi_desigens1300/featured"><i class="fa fa-youtube-play"></i></a>
+          <a href="https://www.instagram.com/panna__mehndi_desigens_/"><i class="fa fa-instagram"></i></a>
         </div>
-        <div class="infor">
-         <h2>Nishi Agrawal  <br>
-           <span class="small">Mehndi Designer</span>
-         </h2>
-         </div>
-         <hr class="horizontal"> 
-         <div class="font-awesomes">
-             <div class="fontt">
-                 <a href="https://www.instagram.com/panna__mehndi_desigens_/" class="fa fa-instagram"></a>
-                 <a href="https://chat.whatsapp.com/Blx2V6BxM4U6aHdo0CCjfJ" class="fa fa-whatsapp"></a>
-                 <a href="https://www.youtube.com/@panna_mehndi_desigens1300/featured" class="fa fa-youtube"></a>
-             </div>
-         </div>
-     </div>
+       </div>
 </body>
 </html>
